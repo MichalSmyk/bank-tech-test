@@ -14,10 +14,12 @@ describe('BankModel', () => {
         expect(newBankModel.getAmount()).toBe(100)
     });
 
-    it('returns total amount after withdrawal', () => {
+    it('returns total amount after deposit', () => {
         expect(newBankModel.getDeposit(50)).toBe(150)
     });
 
- 
+    it('returns total amount after withdrawal', () => {
+        expect(newBankModel.getWithdrawal(50)).toBe(50);
+    })
 
 })
