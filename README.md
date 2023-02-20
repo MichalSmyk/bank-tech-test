@@ -34,3 +34,11 @@ $npm install -g jest
 $ jest
 ```
 
+## Running the app
+
+To run the app and see bank statment type in your terminal. 
+```
+ node app.js 
+```
+If you want to add more money or withdraw money update app.js
+
