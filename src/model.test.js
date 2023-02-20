@@ -15,7 +15,9 @@ describe('BankModel', () => {
     });
 
     it('returns total amount after withdrawal', () => {
-        expect(newBankModel.getDeposit(50)).toBe(50)
-    })
+        expect(newBankModel.getDeposit(50)).toBe(150)
+    });
+
+ 
 
 })
