@@ -20,6 +20,10 @@ describe('BankModel', () => {
 
     it('returns total amount after withdrawal', () => {
         expect(newBankModel.getWithdrawal(50)).toBe(50);
+    });
+
+    it('throws an error if withdraw amount is bigger than total balane', () => {
+        expect(() => newBankModel.getWithdrawal(150)).toThrow('Balance is lower than the amout to withdraw')
     })
 
 })
