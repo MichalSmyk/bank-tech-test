@@ -1,3 +1,4 @@
+const BankModel = require('../lib/model');
 const BankStatement = require('../lib/view')
 
 describe('BankStatement', () => {
@@ -20,5 +21,12 @@ describe('BankStatement', () => {
         statement.withdraw('02/02/2023', 50)
         expect(statement.transactions).toEqual([{ date: '02/02/2023', amount: -50}]);
     });
+
+    it('should return the correct balance', () => {
+        statement.deposit('01/02/2023', 100);
+        statement.deposit('02/02/2023', 100);
+        statement.withdraw('03/02/2023', 30);
+        expect(statement.balance()).toEqual(170);
+    })
 
 })
