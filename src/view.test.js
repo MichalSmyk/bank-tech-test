@@ -27,6 +27,5 @@ describe('BankStatement', () => {
         statement.deposit('02/02/2023', 100);
         statement.withdraw('03/02/2023', 30);
         expect(statement.balance()).toEqual(170);
-    })
-
+    });
 })
