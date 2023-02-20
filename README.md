@@ -1,5 +1,10 @@
 # Bank tech test
 
+This is a tech test as part of Makers course. 
+Instructions for this challenge are [here](instructions.md)
+The goal for this is to write clean, readable code, with README file that explains how to install dependencies, run the tests and run the project
+
+
 To run this code you will need Node. If you don't have it installed you can istall it using this commande line in your terminal with brew 
 
 ```
