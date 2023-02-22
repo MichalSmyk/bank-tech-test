@@ -1,4 +1,4 @@
-const BankModel = require('../lib/model')
+const BankModel = require('../lib/bank_model')
 
 describe('BankModel', () => {
 

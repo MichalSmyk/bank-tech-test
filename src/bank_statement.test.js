@@ -1,5 +1,5 @@
-const BankModel = require('../lib/bankModel');
-const BankStatement = require('../lib/bankStatement')
+const BankModel = require('../lib/bank_model');
+const BankStatement = require('../lib/bank_statement')
 
 describe('BankStatement', () => {
     let statement;
