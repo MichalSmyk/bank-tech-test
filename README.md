@@ -47,7 +47,7 @@ To run the app and see bank statment type in your terminal.
 ```
 If you want to add more money or withdraw money update app.js
 
-## Exapmle:
+## Example:
  
  
 ```javaScript
