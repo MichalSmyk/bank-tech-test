@@ -14,4 +14,14 @@ describe('BankStatement and BankModel integration', () => {
       statement.transactions.push(model);
       expect(statement.balance()).toBe(2000);
     });
+    it('should correctly print the statement after adding a BankModel instance', () => {
+      statement.deposit('2022-02-21', 1000);
+      const model = new BankModel('2022-02-21', 1000);
+      statement.transactions.push(model);
+      const expectedStatement =
+      'date ||   credit ||   debit ||   balance\n\n' +
+      '2022-02-21||1000.00||      ||2000.00\n' +
+      '2022-02-21||1000.00||      ||1000.00';
+      expect(statement.statement()).toBe(expectedStatement);
+    });
 })
