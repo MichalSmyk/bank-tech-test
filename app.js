@@ -1,5 +1,5 @@
-const BankModel = require('./lib/model');
-const BankStatement = require('./lib/view'); 
+const BankModel = require('./lib/bankModel');
+const BankStatement = require('./lib/bankStatement'); 
 
 const statement = new BankStatement();
 
