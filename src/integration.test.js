@@ -24,4 +24,12 @@ describe('BankStatement and BankModel integration', () => {
       '2022-02-21||1000.00||      ||1000.00';
       expect(statement.statement()).toBe(expectedStatement);
     });
+    it('should update the balance in the statement after calling BankModel methods', () => {
+        statement.deposit('2022-02-21', 1000);
+        const model = new BankModel('2022-02-21', 1000);
+        statement.transactions.push(model);
+        const withdrawalAmount = 500;
+        model.amount = model.getWithdrawal(withdrawalAmount);
+        expect(statement.balance()).toEqual(1500);
+    });
 })
