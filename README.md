@@ -47,10 +47,29 @@ To run the app and see bank statment type in your terminal.
 ```
 If you want to add more money or withdraw money update app.js
 
-Expected output: 
+## Exapmle:
+ 
+ 
+```javaScript
+//I want to deposit money
+statement.deposit('12/03/2023', 1000)
 
-![statement](statement.png)
+//I want to do withdraw money 
+statement.withdraw('13/03/2023', 200)
+```
+
+
 
 Test coverage:
 
 ![test](test_coverage.png)
+
+To run the test coverage use this command line in the terminal: 
+
+```
+npm test -- --coverage
+```
+
+Output:
+
+![statement](statement.png)
